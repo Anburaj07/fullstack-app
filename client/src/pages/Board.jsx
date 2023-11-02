@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   ButtonGroup,
-  Card,
   FormControl,
   FormLabel,
   Heading,
@@ -140,7 +139,8 @@ const Board = () => {
     }
   };
   useEffect(()=>{
-    axios.get(`http://localhost:8080/boards`)
+    // axios.get(`http://localhost:8080/boards`)
+    axios.get(`https://wild-cyan-pronghorn-yoke.cyclic.app/boards`)
     .then((res)=>{
         // console.log(res.data)
         setBoards(res.data.boards)
